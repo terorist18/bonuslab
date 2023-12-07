@@ -11,4 +11,27 @@ Find out where to get a trust fund.
 Help from your local council
 Your council has a local welfare assistance scheme.
 
+
 I am biginteger aka
+
+import javax.swing.*;
+import java.awt.*;
+
+public class WhiteBackgroundExample {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> createAndShowGUI());
+    }
+
+    private static void createAndShowGUI() {
+        JFrame frame = new JFrame("White Background Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Устанавливаем белый фон для контента окна
+        frame.getContentPane().setBackground(Color.WHITE);
+
+        // Устанавливаем размеры и отображаем окно по центру
+        frame.setSize(400, 300);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
+}
